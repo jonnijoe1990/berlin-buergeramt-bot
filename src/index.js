@@ -35,6 +35,8 @@ const job = new SimpleIntervalJob(
 scheduler.addSimpleIntervalJob(job);
 
 async function checkForAppointments() {
+  console.info(`checking ${process.env.BOOKING_URL}`)
+  
   let bookingPageHtml;
 
   try {
